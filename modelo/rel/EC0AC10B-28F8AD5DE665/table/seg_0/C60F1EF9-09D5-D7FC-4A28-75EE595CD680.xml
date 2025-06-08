@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C60F1EF9-09D5-D7FC-4A28-75EE595CD680" name="TB_GS_SENSOR">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>1B66D412-BFC5-31C1-8376-403054B59A79</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor" id="34BAF241-7C07-FB62-C71E-633FDC414964">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>A1475530-8A5E-4C2F-F6DD-0123E0D9CC76</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_tipo" id="A4A5A2E1-93EA-A7EE-4DFF-023234ACD1D0">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>2A626297-18F0-AB36-1388-C23E27286F09</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_status" id="D96F5F3A-DE4B-960D-9391-4F5C64EECB5F">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>8E25978A-4453-DD91-442E-DF69429238DF</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sensor" id="3699A1DB-9520-E7B0-24E9-D249BC6E1470">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>63A81E46-F2D1-C499-C021-EA3E57B117FC</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_drone" id="97A29054-461D-253D-B40D-B21A2F356886">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>553C4838-A3BB-0592-6DE5-9CDF6DE9C8A5</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0451D0F7-610A-6D87-8A7E-2140A9248770" referredColumn="1937D548-B946-5748-0ABE-F5DAD0D9A2F9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77E29645-67C5-92FE-4C35-2FBD1BF0BBE5" name="PK_GS_SENSOR">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>030260E4-91F3-BAEF-584E-3D15B8CE4202</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34BAF241-7C07-FB62-C71E-633FDC414964"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD9F9DA7-F6FB-A286-8A81-466BF20CA5D6" name="FK_GS_SENSOR_DRONE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>F2EA8549-3AAF-51E9-85C3-4F9918C83B4B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97A29054-461D-253D-B40D-B21A2F356886"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

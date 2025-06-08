@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB10DB86-64B1-777F-19FB-AC81F8C4D50A" name="TB_GS_CIDADE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>B0CFDFC1-DDD5-C615-CC3B-8E31651AB323</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cidade" id="0CE95EF3-903B-43F4-27E1-31A2C1C021C4">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>77F7ADE5-EEDB-96CD-CBD1-4ED27EA59FCE</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cidade" id="11896B62-D058-8D51-98F7-471E750AFB43">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>54039B74-44A6-C88E-BBB3-F1BB9E537752</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_estado" id="598D7835-5824-C380-9FAF-46A3256E8376">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>591F6B3F-1C88-DF50-EB3C-0920BB85276F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42CF7660-839A-899A-86E4-351DF9E74F8C" referredColumn="8A1B6E81-6C98-79BE-1289-674CDFA23500"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F766A104-EC22-B58A-FD0E-CFAB43049956" name="PK_GS_CIDADE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>78A68563-9594-F8A2-7B19-760195D8D3ED</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CE95EF3-903B-43F4-27E1-31A2C1C021C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32D2867D-85AE-E3E7-0933-F1C420D44D6C" name="FK_GS_CIDADE_ESTADO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>7D554C41-8A9D-4EA1-D256-1107280EE2C7</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="598D7835-5824-C380-9FAF-46A3256E8376"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

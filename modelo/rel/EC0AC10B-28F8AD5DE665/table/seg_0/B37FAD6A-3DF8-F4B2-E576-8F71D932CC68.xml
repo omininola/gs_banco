@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B37FAD6A-3DF8-F4B2-E576-8F71D932CC68" name="TB_GS_USUARIO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>774ABB8E-174A-526B-964A-C7982CB160E5</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="0E4E8AA9-9B88-D829-0580-34F08181A8C1">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>8BE56E81-A571-61E9-9169-8815071568CE</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_usuario" id="270BD227-8BA0-3065-9460-2B0EDB7F0DF6">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>50216BCA-6AE5-6B87-6B9C-09E01304D86E</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_senha" id="D8AE2AFA-758E-2BAA-EB73-9DEE0E967BCF">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>C5A5F8F3-4643-9FB4-45BD-85F47CC88483</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_email" id="A14FAC2E-75A0-D1B7-0F65-C9C9D8D90975">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>060E494C-F36C-2AFA-1261-1E3BBF3D1378</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_role" id="FF983ABD-EDB5-0E17-EB30-B4F06C3CCC87">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>7651129E-8074-D95B-80FF-6D503908350F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2574CD0D-F5CD-65CB-AC2C-ABB58F926C9E" name="PK_GS_USUARIO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>288DDD93-1629-3C55-0B6F-8D374140CE70</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E4E8AA9-9B88-D829-0580-34F08181A8C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AECAB613-8A83-2CE6-5065-BC337FD567F2" name="UN_GS_USUARIO_EMAIL">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:18:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A14FAC2E-75A0-D1B7-0F65-C9C9D8D90975"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHK_GS_USUARIO_ROLE" directorySegmentName="seg_0" id="817C9C17-D10C-370A-79FD-AC1C526F4B04">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 11:11:51 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<rule><![CDATA[NM_ROLE IN ('ADMIN', 'USER')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

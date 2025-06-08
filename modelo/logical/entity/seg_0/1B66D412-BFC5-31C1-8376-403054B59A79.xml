@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B66D412-BFC5-31C1-8376-403054B59A79" name="TB_GS_SENSOR">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:03:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sensor" id="A1475530-8A5E-4C2F-F6DD-0123E0D9CC76">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:03:47 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_tipo" id="2A626297-18F0-AB36-1388-C23E27286F09">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:03:57 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_status" id="8E25978A-4453-DD91-442E-DF69429238DF">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:04:15 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_sensor" id="63A81E46-F2D1-C499-C021-EA3E57B117FC">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:04:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_drone" id="553C4838-A3BB-0592-6DE5-9CDF6DE9C8A5">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:10:54 UTC</createdTime>
+<generatorID>F2EA8549-3AAF-51E9-85C3-4F9918C83B4B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<referedAttribute>21BD6530-EE76-7E47-9518-1382373A6447</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="030260E4-91F3-BAEF-584E-3D15B8CE4202" name="TB_GS_SENSOR PK">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:03:55 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1475530-8A5E-4C2F-F6DD-0123E0D9CC76</attributeRef>
+<attributeRef>553C4838-A3BB-0592-6DE5-9CDF6DE9C8A5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

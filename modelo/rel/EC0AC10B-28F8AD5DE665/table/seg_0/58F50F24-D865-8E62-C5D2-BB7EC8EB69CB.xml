@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58F50F24-D865-8E62-C5D2-BB7EC8EB69CB" name="TB_GS_RELATORIO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>777BC587-B3CC-41CD-F12D-8D522F8BD9E1</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_relatorio" id="B5C86528-F420-5CF8-8AB7-8DD28812F1B7">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>F1C8D5E8-FFFE-FB13-1219-3FB9DD462C6A</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_relatorio" id="45AB4800-071C-2F8A-1594-3F14CCEE34A3">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>9A108947-DCA4-BED5-804B-3EFE4FA0A5A3</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_relatorio" id="DD00A0DF-7241-D2DA-DDD8-32BBCED897B2">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>F05D6197-2EDF-86A4-FDE1-8CFCAFAC5106</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="9383C549-5D14-35E9-78DE-FB26042BEDBB">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>175EC981-0828-E089-BDEB-1A931A070A41</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6471561E-AD37-8C76-B437-D4A63A78E94D" referredColumn="0E4E8AA9-9B88-D829-0580-34F08181A8C1"/>
+</associations>
+</Column>
+<Column name="id_drone" id="E347E0FB-E4D8-6338-0D13-D54A5854B7E4">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>3BB533A5-CAF1-82EF-A51A-EC9C5C89E17A</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="901519E4-F9A4-A70D-8992-112B6871D9F1" referredColumn="1937D548-B946-5748-0ABE-F5DAD0D9A2F9"/>
+</associations>
+</Column>
+<Column name="id_cidade" id="ED3DE502-F6E9-B072-3BBC-4359DF530ED6">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>D67B55AB-8CFE-7EF7-6ED6-AC5D7163B25F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB4B5B85-7324-C2A3-6286-7F0320A2B0A4" referredColumn="0CE95EF3-903B-43F4-27E1-31A2C1C021C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8B63729-43C9-2E0A-FB9C-4310B8C466DE" name="PK_GS_RELATORIO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>AE3FDA12-F654-F276-CB5F-2470B6110428</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5C86528-F420-5CF8-8AB7-8DD28812F1B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5667360E-3919-5C05-1345-E824E3EE1B44" name="FK_GS_RELATORIO_USUARIO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>F5014EED-3BFF-6959-C14F-9082BE2915DD</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9383C549-5D14-35E9-78DE-FB26042BEDBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38568282-CA07-B765-A49A-E37D0EEF95EC" name="FK_GS_RELATORIO_DRONE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>BCE4D063-866B-511D-F285-76B884361711</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E347E0FB-E4D8-6338-0D13-D54A5854B7E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF937669-9C81-6AD5-CDC9-E03478E0F6B4" name="FK_GS_RELATORIO_CIDADE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>3D446F94-D914-3584-B7DB-A371C5645176</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED3DE502-F6E9-B072-3BBC-4359DF530ED6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

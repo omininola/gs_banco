@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="777BC587-B3CC-41CD-F12D-8D522F8BD9E1" name="TB_GS_RELATORIO">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:01:58 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_relatorio" id="F1C8D5E8-FFFE-FB13-1219-3FB9DD462C6A">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:02:11 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_relatorio" id="9A108947-DCA4-BED5-804B-3EFE4FA0A5A3">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:02:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_relatorio" id="F05D6197-2EDF-86A4-FDE1-8CFCAFAC5106">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:02:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="175EC981-0828-E089-BDEB-1A931A070A41">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:07:19 UTC</createdTime>
+<generatorID>F5014EED-3BFF-6959-C14F-9082BE2915DD</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<referedAttribute>8BE56E81-A571-61E9-9169-8815071568CE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_drone" id="3BB533A5-CAF1-82EF-A51A-EC9C5C89E17A">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:08:46 UTC</createdTime>
+<generatorID>BCE4D063-866B-511D-F285-76B884361711</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<referedAttribute>21BD6530-EE76-7E47-9518-1382373A6447</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cidade" id="D67B55AB-8CFE-7EF7-6ED6-AC5D7163B25F">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:09:13 UTC</createdTime>
+<generatorID>3D446F94-D914-3584-B7DB-A371C5645176</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<referedAttribute>77F7ADE5-EEDB-96CD-CBD1-4ED27EA59FCE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AE3FDA12-F654-F276-CB5F-2470B6110428" name="TB_GS_RELATORIO PK">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:02:24 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F1C8D5E8-FFFE-FB13-1219-3FB9DD462C6A</attributeRef>
+<attributeRef>175EC981-0828-E089-BDEB-1A931A070A41</attributeRef>
+<attributeRef>3BB533A5-CAF1-82EF-A51A-EC9C5C89E17A</attributeRef>
+<attributeRef>D67B55AB-8CFE-7EF7-6ED6-AC5D7163B25F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="possuiv6" directorySegmentName="seg_0" id="86D6F5E7-1215-B2A7-5FB5-71DAD41D1463">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:12:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<sourcePk>6475813E-3214-B478-A559-4FB6C07EA64D</sourcePk>
+<identifying>true</identifying>
+<nameOnTarget>id_pais</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C7FC7222-4732-1552-6315-AC0D54D68403</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FD83EBB2-A605-B2CB-4FE3-3B55EBDD805C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

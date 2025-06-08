@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="8F6B9EB0-7C8B-CC2E-98FD-416ECFA562E5" mainViewID="A571F72B-193F-2F2B-5F8D-CBC5A7C1D36D">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 09:51:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

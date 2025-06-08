@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0CFDFC1-DDD5-C615-CC3B-8E31651AB323" name="TB_GS_CIDADE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 09:55:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cidade" id="77F7ADE5-EEDB-96CD-CBD1-4ED27EA59FCE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 09:55:29 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cidade" id="54039B74-44A6-C88E-BBB3-F1BB9E537752">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 09:55:44 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado" id="591F6B3F-1C88-DF50-EB3C-0920BB85276F">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:11:51 UTC</createdTime>
+<generatorID>7D554C41-8A9D-4EA1-D256-1107280EE2C7</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<referedAttribute>1481F197-44F3-8C87-173A-07F8ECDC5568</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="0EA0F04A-47B7-5CF1-443C-1AAD0C885A3A">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:12:09 UTC</createdTime>
+<generatorID>7D554C41-8A9D-4EA1-D256-1107280EE2C7</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<referedAttribute>7F3715D0-1CEA-D9B8-BE7A-42B975386CD9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78A68563-9594-F8A2-7B19-760195D8D3ED" name="TB_GS_CIDADE PK">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 09:55:42 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="EC0AC10B-653A-6C43-335E-28F8AD5DE665" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>77F7ADE5-EEDB-96CD-CBD1-4ED27EA59FCE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

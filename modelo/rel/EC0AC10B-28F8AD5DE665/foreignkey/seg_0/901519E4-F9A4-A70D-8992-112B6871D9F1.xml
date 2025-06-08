@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="901519E4-F9A4-A70D-8992-112B6871D9F1" containerWithKeyObject="58F50F24-D865-8E62-C5D2-BB7EC8EB69CB" localFKIndex="38568282-CA07-B765-A49A-E37D0EEF95EC" name="FK_GS_RELATORIO_DRONE">
+<createdBy>otavi</createdBy>
+<createdTime>2025-06-08 10:14:40 UTC</createdTime>
+<generatorID>BCE4D063-866B-511D-F285-76B884361711</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>TB_GS_DRONE</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>60F4D60B-2A04-1957-F58B-B6694DB2DFB2</referredTableID>
+<keyObject>915E0BD6-7B66-3406-0D34-AFDE27507A2E</keyObject>
+<referredKeyID>915E0BD6-7B66-3406-0D34-AFDE27507A2E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_drone</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
