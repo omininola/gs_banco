@@ -19,34 +19,34 @@ create table tb_gs_cidade (
 create table tb_gs_usuario (
    id_usuario numeric(5) not null,
    nm_usuario varchar(100) not null,
-   nm_email   varchar(255) not null,
-   nm_senha   varchar(100) not null,
+   ds_senha   varchar(100) not null,
+   ds_email   varchar(255) not null,
    nm_role    varchar(20) not null
 );
 
 create table tb_gs_drone (
-   id_drone     numeric(5) not null,
-   nm_modelo    varchar(100) not null,
-   nm_status    varchar(20) not null,
-   nm_descricao varchar(50) null
-)
+   id_drone  numeric(5) not null,
+   nm_modelo varchar(100) not null,
+   nm_status varchar(20) not null,
+   ds_drone  varchar(50) null
+);
 
 create table tb_gs_sensor (
-   id_sensor    numeric(5) not null,
-   id_drone     numeric(5) not null,
-   nm_tipo      varchar(50) not null,
-   nm_status    varchar(20) not null,
-   nm_descricao varchar(50) null
-)
+   id_sensor numeric(5) not null,
+   id_drone  numeric(5) not null,
+   nm_tipo   varchar(50) not null,
+   nm_status varchar(20) not null,
+   ds_sensor varchar(50) null
+);
 
 create table tb_gs_relatorio (
    id_relatorio numeric(5) not null,
    id_cidade    numeric(5) not null,
    id_usuario   numeric(5) null,
    id_drone     numeric(5) null,
-   nm_descricao varchar(255) not null,
+   ds_relatorio varchar(255) not null,
    dt_relatorio date not null
-)
+);
 
 -- Primary keys
 alter table tb_gs_pais add constraint pk_gs_pais primary key ( id_pais );
@@ -89,7 +89,7 @@ alter table tb_gs_relatorio
       references tb_gs_drone ( id_drone );
 
 -- Unique constraints
-alter table tb_gs_usuario add constraint un_gs_usuario_email unique ( nm_email );
+alter table tb_gs_usuario add constraint un_gs_usuario_email unique ( ds_email );
 
 -- Check constraints
 alter table tb_gs_usuario

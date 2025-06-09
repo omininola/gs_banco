@@ -22,6 +22,7 @@ begin
    end loop;
    close c_relatorios;
 end;
+/
 
 declare
    cursor c_sensores is
@@ -38,3 +39,4 @@ begin
                            || reg.nm_modelo);
    end loop;
 end;
+/

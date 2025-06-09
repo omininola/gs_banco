@@ -18,6 +18,7 @@ begin
                            || reg.total);
    end loop;
 end;
+/
 
 declare
    cursor c_drones is
@@ -37,3 +38,4 @@ begin
       end if;
    end loop;
 end;
+/

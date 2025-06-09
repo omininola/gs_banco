@@ -1,6 +1,6 @@
 -- Tabela Pais
 -- Insert
-create procedure inserir_pais (
+create or replace procedure inserir_pais (
    p_id_pais in tb_gs_pais.id_pais%type,
    p_nm_pais in tb_gs_pais.nm_pais%type
 ) as
@@ -11,9 +11,10 @@ begin
    ) values ( p_id_pais,
               p_nm_pais );
 end;
+/
 
 -- Update
-create procedure atualizar_pais (
+create or replace procedure atualizar_pais (
    p_id_pais in tb_gs_pais.id_pais%type,
    p_nm_pais in tb_gs_pais.nm_pais%type
 ) as
@@ -23,15 +24,17 @@ begin
       nm_pais = p_nm_pais
     where id_pais = p_id_pais;
 end;
+/
 
 -- Delete
-create procedure excluir_pais (
+create or replace procedure excluir_pais (
    p_id_pais in tb_gs_pais.id_pais%type
 ) as
 begin
    delete from tb_gs_pais
     where id_pais = p_id_pais;
 end;
+/
 
 -- Execução
 begin
@@ -56,11 +59,12 @@ begin
       'Paraguai'
    );
 end;
+/
 
 
 -- Tabela Estado
 -- Insert
-create procedure inserir_estado (
+create or replace procedure inserir_estado (
    p_id_estado in tb_gs_estado.id_estado%type,
    p_nm_estado in tb_gs_estado.nm_estado%type,
    p_id_pais   in tb_gs_pais.id_pais%type
@@ -74,9 +78,10 @@ begin
               p_nm_estado,
               p_id_pais );
 end;
+/
 
 -- Update
-create procedure atualizar_estado (
+create or replace procedure atualizar_estado (
    p_id_estado in tb_gs_estado.id_estado%type,
    p_nm_estado in tb_gs_estado.nm_estado%type,
    p_id_pais   in tb_gs_pais.id_pais%type
@@ -87,15 +92,17 @@ begin
           id_pais = p_id_pais
     where id_estado = p_id_estado;
 end;
+/
 
 -- Delete
-create procedure excluir_estado (
+create or replace procedure excluir_estado (
    p_id_estado in tb_gs_estado.id_estado%type
 ) as
 begin
    delete from tb_gs_estado
     where id_estado = p_id_estado;
 end;
+/
 
 -- Execução
 begin
@@ -125,11 +132,12 @@ begin
       1
    );
 end;
+/
 
 
 -- Tabela Cidade
 -- Insert
-create procedure inserir_cidade (
+create or replace procedure inserir_cidade (
    p_id_cidade in tb_gs_cidade.id_cidade%type,
    p_nm_cidade in tb_gs_cidade.nm_cidade%type,
    p_id_estado in tb_gs_estado.id_estado%type
@@ -143,9 +151,10 @@ begin
               p_nm_cidade,
               p_id_estado );
 end;
+/
 
 -- Update
-create procedure atualizar_cidade (
+create or replace procedure atualizar_cidade (
    p_id_cidade in tb_gs_cidade.id_cidade%type,
    p_nm_cidade in tb_gs_cidade.nm_cidade%type,
    p_id_estado in tb_gs_estado.id_estado%type
@@ -156,15 +165,17 @@ begin
           id_estado = p_id_estado
     where id_cidade = p_id_cidade;
 end;
+/
 
 -- Delete
-create procedure excluir_cidade (
+create or replace procedure excluir_cidade (
    p_id_cidade in tb_gs_cidade.id_cidade%type
 ) as
 begin
    delete from tb_gs_cidade
     where id_cidade = p_id_cidade;
 end;
+/
 
 -- Execução
 begin
@@ -194,56 +205,60 @@ begin
       5
    );
 end;
+/
 
 
 -- Tabela Usuario
 -- Insert
-create procedure inserir_usuario (
+create or replace procedure inserir_usuario (
    p_id_usuario in tb_gs_usuario.id_usuario%type,
    p_nm_usuario in tb_gs_usuario.nm_usuario%type,
-   p_nm_email   in tb_gs_usuario.nm_email%type,
-   p_nm_senha   in tb_gs_usuario.nm_senha%type,
+   p_ds_email   in tb_gs_usuario.ds_email%type,
+   p_ds_senha   in tb_gs_usuario.ds_senha%type,
    p_nm_role    in tb_gs_usuario.nm_role%type
 ) as
 begin
    insert into tb_gs_usuario (
       id_usuario,
       nm_usuario,
-      nm_email,
-      nm_senha,
+      ds_email,
+      ds_senha,
       nm_role
    ) values ( p_id_usuario,
               p_nm_usuario,
-              p_nm_email,
-              p_nm_senha,
+              p_ds_email,
+              p_ds_senha,
               p_nm_role );
 end;
+/
 
 -- Update
-create procedure atualizar_usuario (
+create or replace procedure atualizar_usuario (
    p_id_usuario in tb_gs_usuario.id_usuario%type,
    p_nm_usuario in tb_gs_usuario.nm_usuario%type,
-   p_nm_email   in tb_gs_usuario.nm_email%type,
-   p_nm_senha   in tb_gs_usuario.nm_senha%type,
+   p_ds_email   in tb_gs_usuario.ds_email%type,
+   p_ds_senha   in tb_gs_usuario.ds_senha%type,
    p_nm_role    in tb_gs_usuario.nm_role%type
 ) as
 begin
    update tb_gs_usuario
       set nm_usuario = p_nm_usuario,
-          nm_email = p_nm_email,
-          nm_senha = p_nm_senha,
+          ds_email = p_ds_email,
+          ds_senha = p_ds_senha,
           nm_role = p_nm_role
     where id_usuario = p_id_usuario;
 end;
+/
 
 -- Delete
-create procedure excluir_usuario (
+create or replace procedure excluir_usuario (
    p_id_usuario in tb_gs_usuario.id_usuario%type
 ) as
 begin
    delete from tb_gs_usuario
     where id_usuario = p_id_usuario;
 end;
+/
 
 -- Execução
 begin
@@ -252,82 +267,86 @@ begin
       'João Silva',
       'joao@email.com',
       'senha123',
-      'admin'
+      'ADMIN'
    );
    inserir_usuario(
       2,
       'Maria Oliveira',
       'maria@email.com',
       'senha456',
-      'user'
+      'USER'
    );
    inserir_usuario(
       3,
       'Carlos Souza',
       'carlos@email.com',
       'senha789',
-      'user'
+      'USER'
    );
    inserir_usuario(
       4,
       'Ana Costa',
       'ana@email.com',
       'senha101',
-      'user'
+      'USER'
    );
    inserir_usuario(
       5,
       'Pedro Santos',
       'pedro@email.com',
       'senha202',
-      'user'
+      'USER'
    );
 end;
+/
 
 
 -- Tabela Drone
 -- Insert
-create procedure inserir_drone (
-   p_id_drone     in tb_gs_drone.id_drone%type,
-   p_nm_modelo    in tb_gs_drone.nm_modelo%type,
-   p_nm_status    in tb_gs_drone.nm_status%type,
-   p_nm_descricao in tb_gs_drone.nm_descricao%type
+create or replace procedure inserir_drone (
+   p_id_drone  in tb_gs_drone.id_drone%type,
+   p_nm_modelo in tb_gs_drone.nm_modelo%type,
+   p_nm_status in tb_gs_drone.nm_status%type,
+   p_ds_drone  in tb_gs_drone.ds_drone%type
 ) as
 begin
    insert into tb_gs_drone (
       id_drone,
       nm_modelo,
       nm_status,
-      nm_descricao
+      ds_drone
    ) values ( p_id_drone,
               p_nm_modelo,
               p_nm_status,
-              p_nm_descricao );
+              p_ds_drone );
 end;
+/
 
 -- Update
-create procedure atualizar_drone (
-   p_id_drone     in tb_gs_drone.id_drone%type,
-   p_nm_modelo    in tb_gs_drone.nm_modelo%type,
-   p_nm_status    in tb_gs_drone.nm_status%type,
-   p_nm_descricao in tb_gs_drone.nm_descricao%type
+create or replace procedure atualizar_drone (
+   p_id_drone  in tb_gs_drone.id_drone%type,
+   p_nm_modelo in tb_gs_drone.nm_modelo%type,
+   p_nm_status in tb_gs_drone.nm_status%type,
+   p_ds_drone  in tb_gs_drone.ds_drone%type
 ) as
 begin
    update tb_gs_drone
       set nm_modelo = p_nm_modelo,
           nm_status = p_nm_status,
-          nm_descricao = p_nm_descricao
+          ds_drone = p_ds_drone
     where id_drone = p_id_drone;
 end;
+/
 
 -- Delete
-create procedure excluir_drone (
+create or replace procedure excluir_drone (
    p_id_drone in tb_gs_drone.id_drone%type
 ) as
 begin
    delete from tb_gs_drone
     where id_drone = p_id_drone;
 end;
+/
 
 -- Execução
 begin
@@ -362,56 +381,60 @@ begin
       'Drone de inspeção'
    );
 end;
+/
 
 
 -- Tabela Sensor
 -- Insert
-create procedure inserir_sensor (
-   p_id_sensor    in tb_gs_sensor.id_sensor%type,
-   p_nm_tipo      in tb_gs_sensor.nm_tipo%type,
-   p_nm_status    in tb_gs_sensor.nm_status%type,
-   p_nm_descricao in tb_gs_sensor.nm_descricao%type,
-   p_id_drone     in tb_gs_drone.id_drone%type
+create or replace procedure inserir_sensor (
+   p_id_sensor in tb_gs_sensor.id_sensor%type,
+   p_nm_tipo   in tb_gs_sensor.nm_tipo%type,
+   p_nm_status in tb_gs_sensor.nm_status%type,
+   p_ds_sensor in tb_gs_sensor.ds_sensor%type,
+   p_id_drone  in tb_gs_drone.id_drone%type
 ) as
 begin
    insert into tb_gs_sensor (
       id_sensor,
       nm_tipo,
       nm_status,
-      nm_descricao,
+      ds_sensor,
       id_drone
    ) values ( p_id_sensor,
               p_nm_tipo,
               p_nm_status,
-              p_nm_descricao,
+              p_ds_sensor,
               p_id_drone );
 end;
+/
 
 -- Update
-create procedure atualizar_sensor (
-   p_id_sensor    in tb_gs_sensor.id_sensor%type,
-   p_nm_tipo      in tb_gs_sensor.nm_tipo%type,
-   p_nm_status    in tb_gs_sensor.nm_status%type,
-   p_nm_descricao in tb_gs_sensor.nm_descricao%type,
-   p_id_drone     in tb_gs_drone.id_drone%type
+create or replace procedure atualizar_sensor (
+   p_id_sensor in tb_gs_sensor.id_sensor%type,
+   p_nm_tipo   in tb_gs_sensor.nm_tipo%type,
+   p_nm_status in tb_gs_sensor.nm_status%type,
+   p_ds_sensor in tb_gs_sensor.ds_sensor%type,
+   p_id_drone  in tb_gs_drone.id_drone%type
 ) as
 begin
    update tb_gs_sensor
       set nm_tipo = p_nm_tipo,
           nm_status = p_nm_status,
-          nm_descricao = p_nm_descricao,
+          ds_sensor = p_ds_sensor,
           id_drone = p_id_drone
     where id_sensor = p_id_sensor;
 end;
+/
 
 -- Delete
-create procedure excluir_sensor (
+create or replace procedure excluir_sensor (
    p_id_sensor in tb_gs_sensor.id_sensor%type
 ) as
 begin
    delete from tb_gs_sensor
     where id_sensor = p_id_sensor;
 end;
+/
 
 -- Execução
 begin
@@ -451,13 +474,14 @@ begin
       5
    );
 end;
+/
 
 
 -- Tabela Relatório
 -- Insert
-create procedure inserir_relatorio (
+create or replace procedure inserir_relatorio (
    p_id_relatorio in tb_gs_relatorio.id_relatorio%type,
-   p_nm_descricao in tb_gs_relatorio.nm_descricao%type,
+   p_ds_relatorio in tb_gs_relatorio.ds_relatorio%type,
    p_dt_relatorio in tb_gs_relatorio.dt_relatorio%type,
    p_id_cidade    in tb_gs_cidade.id_cidade%type,
    p_id_usuario   in tb_gs_usuario.id_usuario%type,
@@ -466,23 +490,24 @@ create procedure inserir_relatorio (
 begin
    insert into tb_gs_relatorio (
       id_relatorio,
-      nm_descricao,
+      ds_relatorio,
       dt_relatorio,
       id_cidade,
       id_usuario,
       id_drone
    ) values ( p_id_relatorio,
-              p_nm_descricao,
+              p_ds_relatorio,
               p_dt_relatorio,
               p_id_cidade,
               p_id_usuario,
               p_id_drone );
 end;
+/
 
 -- Update
-create procedure atualizar_relatorio (
+create or replace procedure atualizar_relatorio (
    p_id_relatorio in tb_gs_relatorio.id_relatorio%type,
-   p_nm_descricao in tb_gs_relatorio.nm_descricao%type,
+   p_ds_relatorio in tb_gs_relatorio.ds_relatorio%type,
    p_dt_relatorio in tb_gs_relatorio.dt_relatorio%type,
    p_id_cidade    in tb_gs_cidade.id_cidade%type,
    p_id_usuario   in tb_gs_usuario.id_usuario%type,
@@ -490,22 +515,24 @@ create procedure atualizar_relatorio (
 ) as
 begin
    update tb_gs_relatorio
-      set nm_descricao = p_nm_descricao,
+      set ds_relatorio = p_ds_relatorio,
           dt_relatorio = p_dt_relatorio,
           id_cidade = p_id_cidade,
           id_usuario = p_id_usuario,
           id_drone = p_id_drone
     where id_relatorio = p_id_relatorio;
 end;
+/
 
 -- Delete
-create procedure excluir_relatorio (
+create or replace procedure excluir_relatorio (
    p_id_relatorio in tb_gs_relatorio.id_relatorio%type
 ) as
 begin
    delete from tb_gs_relatorio
     where id_relatorio = p_id_relatorio;
 end;
+/
 
 -- Execução
 begin
@@ -555,3 +582,4 @@ begin
       5
    );
 end;
+/
